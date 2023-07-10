@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract ViewPure {
+    function power(uint256 base, uint256 exponent) public pure returns (uint256) {
+        return base ** exponent;
+    }
+
+    function isEven(uint256 number) public pure returns (bool) {
+        return (number % 2) == 0;
+    }
+}
